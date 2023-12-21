@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
+
+:root {
+  --fonte: "Josefin Sans", sans-serif;
+  --cor-background: #282a36;
+  --cor-fonte: #fff;
+  --cor-bordas: #ff79c6;
+  --cor-hover-botao: #eea8cf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: var(--cor-background);
+}
+
+main {
+  height: 100%;
+}
+
+.container {
+  color: var(--cor-fonte);
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0 6rem 0;
+  font-family: var(--fonte);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.container__cabecalho {
+  margin-bottom: 1rem;
+}
+
+.container__opcao {
+  width: 90%;
+  margin: 0.25rem 0;
+  padding: 1rem 1rem;
+  border: var(--cor-bordas) 2px solid;
+  border-radius: 1rem;
+  transition: background-color 200ms ease-out 100ms;
+}
+
+.container__opcao p {
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-fonte);
+}
+
+a:hover {
+  color: var(--cor-background);
+}
+
+.container__opcao:hover {
+  background-color: var(--cor-hover-botao);
+}
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--cor-bordas);
+  padding: 1.75rem;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--cor-fonte);
+}
+
+.rodape p {
+  font-size: 0.75rem;
+  color: var(--cor-fonte);
+}
+
+.rodape i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: color 200ms ease-out 100ms;
+}
+
+.rodape i:hover {
+  color: var(--cor-background);
+}
