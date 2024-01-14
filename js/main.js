@@ -12,3 +12,8 @@ btnSalvar.addEventListener("click", () => {
 btnVoltar.onclick = function () {
   redirecionaHome();
 };
+
+//lista tratamentos
+
+const listaTratamentoSimples = ['pintura', 'chapinha', 'pistola nano']
+
